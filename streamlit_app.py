@@ -41,7 +41,6 @@ try:
 except URLError as e:
     streamlit.error()
 
-streamlit.stop
 
 #allow end user to add fruit to the list
 def insert_row_snowflake(new_fruit):
