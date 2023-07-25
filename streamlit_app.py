@@ -43,7 +43,7 @@ except URLError as e:
 
 
 # Allow the end user to add a fruit to the list
-def insert row snowflake (new fruit):
+def insert_row_snowflake (new fruit):
     with my_cnx.cursor() as my_cur:
         my_cur.execute("insert into fruit_load_list values ('from streamlit')")
         return "Thanks for adding " + new_fruit
