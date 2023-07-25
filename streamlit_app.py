@@ -54,7 +54,6 @@ if streamlit.button('Add a fruit to the list'):
     back_from_function = insert_row_snowflake(add_my_fruit)
     streamlit.text(back_from_function)
 
-my_data_rows = my_cur.fetchall()
 streamlit.header("View our Fruit List - Add your favorites!")
 streamlit.dataframe(my_data_rows)
 # add a button to load a button
